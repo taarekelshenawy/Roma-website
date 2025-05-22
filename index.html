@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book Store online platform with a variety of books for every reader. Enjoy discounts, reviews, and recommendations to find your next favorite read.">
+    <meta name="keywords" content="books, online bookstore, buy books, bestsellers, fiction, non-fiction, discounts">
+    <title>Roma  WebSite</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <nav>
+            <!-- nav logo -->
+            <div class="nav-logo">
+                <img src="./img/roma_logo-removebg-preview 1.png" alt="nav-logo">
+            </div>
+            <!-- nav icons -->
+            <div class="nav-icons">
+                <!-- drowdown -->
+                <select id="languages" aria-label="اختر اللغة">
+                    <option value="En">En</option>
+                    <option value="AR">AR</option>
+                </select>
+              <a href="#"><img src="./img/user_svgrepo.com.png" class="icon2" alt="icon-two"></a>
+              <a href="#"><img src="./img/Vector2.png" class="icon3" alt="icon-three"></a>
+                <div class="cart-icon">
+                    <a href="#"><img src="./img/cart.png" alt="cart-icon"></a>
+                    <div>0</div>
+                </div>
+            </div>
+            <!-- nav search -->
+            <div class="nav-search">
+                <div class="search-icon">
+                    <img src="./img/search.png" alt="search-icon">
+                </div>
+                <input type="text" placeholder="بحث باسماء الكتاب ,المؤلف ,العنوان">
+            </div>
+            <!-- nav ul -->
+             <ul class="navlist">
+                <li><a href="#">الرئيسيه</a></li>
+                <li><a href="#">جميع الكتب</a></li>
+                <li><a href="#">المنتجات الجديده</a></li>
+                <li><a href="#">المذكرات</a></li>
+                <li><a href="#">المراجعات</a></li>
+             </ul>
+            <div class="menuicon" id="menuicon">
+                <img src="./img/menuicon.png" alt="menu-icon">
+            </div>
+            <div id="scroll-progress"></div>
+        </nav>
+        <!-- end navbar -->
+    </header>
+
+    <!-- hero section -->
+     <section class="hero-section">
+        <div class="hero-container">
+             <div class="hero-content">
+                 <p>بيع كتب الجيولوجيا يعدّ فرصة رائعة للطلاب والباحثين ومحبي 
+                العلوم الطبيعية لفهم تكوين 
+                الأرض وتاريخها. تقدم هذه الكتب معلومات معمقة حول الصخور، المعادن، البراكين، 
+                الزلازل، وتحركات الصفائح التكتونية، مما يساعد القارئ على 
+                فهم البيئات الطبيعية والكوارث الجيولوجية. من خلال توفير كتب 
+                الجيولوجيا، يمكن للقراء الاطلاع على أحدث الدراسات والنظريات المتعلقة بعلم الأرض، 
+                مما يعزز من وعيهم البيئي ويشجعهم على المشاركة في الحفاظ على كوكبنا.
+                </p>
+                <button><a href="#">سجل الأن</a></button>
+            </div>
+            <div class="hero-images">
+                <img src="./img/photo1.jpg" class="img1" alt="hero-image-one">
+                <img src="./img/photo1.jpg" class="img2"  alt="hero-image-two">
+                <img src="./img/photo2.jpg" class="img3"  alt="hero-image-three">
+            </div>
+        </div>
+       
+    </section> 
+
+    <!-- section  All books -->
+     <section class="allbooks-section">
+        <header>
+            <p class="text-one">عرض جميع الكتب</p>
+            <p class="text-two">جميع الكتب</p>
+        </header>
+        <!-- book details -->
+        <div class="slider" id="slider1">
+             <div class="book-card">
+                <div class="book-image">
+                    <img src="./img/book item1.jpg" alt="item-one">
+                </div>
+                <div class="book-content">
+                        <p class="book-title"><a href="#">مبادئ علم الجيولوجيا (Principles of Geology)</a></p>
+                        <p class="book-info">يعد من أوائل الكتب في علم الجيولوجيا ويؤسس
+                            لمفاهيم أساسية في هذا العلم.
+                        </p>
+                        <p class="book-author">المؤلف: تشارلز لايل</p>
+                        <div class="book-rate">
+                            <p>4.3</p>
+                            <img src="./img/star.png" alt="star-icon">
+                        </div>
+                        <div class="book-price">
+                            <p> <span>$ 29.99</span> $ 26.99 </p>
+                        </div>
+                        <button class="bookcard-button">
+                                <p><a href="#">أضف إلى عربة التسوق</a></p>
+                                <img src="./img/addcart.png" alt="add-cart-icon">
+                        </button>
+                </div>
+             </div>
+             <div class="book-card">
+                <div class="book-image">
+                <img src="./img/book item2.jpg" alt="item-2">
+                </div>
+                <div class="book-content">
+                        <p class="book-title"><a href="#">جيولوجيا العالم(Geology of the World)</a></p>
+                        <p class="book-info">
+                            يناقش تطور سطح الأرض والأحداث الجيولوجية التي شكلتها.
+                        </p>
+                        <p class="book-author">
+                            المؤلف: كلارينس دانر</p>
+                        <div class="book-rate">
+                            <p>(3.3)</p>
+                           <img src="./img/star.png" alt="star-icon">
+                        </div>
+                        <div class="book-price">
+                            <p> <span>$ 29.99</span> $ 26.99 </p>
+                        </div>
+                        <button class="bookcard-button">
+                                <p><a href="#">أضف إلى عربة التسوق</a></p>
+                                <img src="./img/addcart.png" alt="add-cart-icon">
+                        </button>
+                </div>
+             </div>
+             <div class="book-card">
+                <div class="book-image">
+                    <img src="./img/book item2.jpg" alt="item-3">
+                </div>
+                <div class="book-content">
+                    <p class="book-title"><a href="#">علم الصخور(Petrology)</a></p>
+                    <p class="book-info">
+                        يتناول تكوين الصخور وأنواعها وعمليات تكوينها.
+                    </p>
+                    <p class="book-author">
+                        المؤلف: هارفي بلات
+                    </p>
+                    <div class="book-rate">
+                        <p>(4.5)</p>
+                        <img src="./img/star.png" alt="star-icon">
+                    </div>
+                    <div class="book-price">
+                        <p> <span>$ 29.99</span> $ 26.99 </p>
+                    </div>
+                    <button class="bookcard-button">
+                            <p><a href="#">أضف إلى عربة التسوق</a></p>
+                            <img src="./img/addcart.png" alt="add-cart-icon">
+                    </button>
+                </div>
+             </div>
+        </div>
+        <!-- book arrows -->
+         <div class="book-arrows">
+            <img src="./img/arrowleft.png" class="prev1" alt="left-icon">
+            <img src="./img/arrowright.png" class="next1" alt="right-icon">
+        </div> 
+     </section>
+
+     <!-- section geology-books-section -->
+      <section class="geology-books-section">
+        <div class="book-image">
+            <img src="./img/books-list.png" alt="book-image">
+
+        </div>
+        <div class="book-content">
+            <p class="header">استكشف أعماق الأرض مع مجموعتنا الجديدة من كتب الجيولوجيا!</p>
+            <p class="description">"سواء كنت طالبًا، باحثًا، أو عاشقًا للطبيعة، مجموعتنا الجديدة من كتب الجيولوجيا مصممة خصيصًا لك! من أساسيات الجيولوجيا إلى علوم الصخور والبترول والهيدرولوجيا الجيولوجية، اكتشف كنوز المعرفة التي تأخذك في رحلة عبر الزمن والأرض. أضف لمكتبتك مصادر موثوقة تساعدك على فهم كوكبنا بشكل أعمق."</p>
+            <button><a href="#">سجل الان</a></button>
+        </div>
+
+      </section>
+ 
+    <!-- section  All books -->
+  <section class="allbooks-section">
+        <header>
+            <p class="text-one">عرض جميع الكتب</p>
+            <p class="text-two">منتجات جديدة</p>
+        </header>
+        <!-- book details -->
+        <div class="slider" id="slider2">
+             <div class="book-card">
+                <div class="book-image">
+                    <img src="./img/book item1.jpg" alt="item-one">
+                </div>
+                <div class="book-content">
+                        <p class="book-title"><a href="#">مبادئ علم الجيولوجيا (Principles of Geology)</a></p>
+                        <p class="book-info">يعد من أوائل الكتب في علم الجيولوجيا ويؤسس
+                            لمفاهيم أساسية في هذا العلم.
+                        </p>
+                        <p class="book-author">المؤلف: تشارلز لايل</p>
+                        <div class="book-rate">
+                            <p>4.3</p>
+                                <img src="./img/star.png" alt="star-icon">
+                        </div>
+                        <div class="book-price">
+                            <p> <span>$ 29.99</span> $ 26.99 </p>
+                        </div>
+                        <button class="bookcard-button">
+                                <p><a href="#">أضف إلى عربة التسوق</a></p>
+                                <img src="./img/addcart.png" alt="add-cart-icon">
+                        </button>
+                </div>
+             </div>
+             <div class="book-card">
+                <div class="book-image">
+                <img src="./img/book item2.jpg" alt="item-2">
+                </div>
+                <div class="book-content">
+                        <p class="book-title"><a href="#">جيولوجيا العالم(Geology of the World)</a></p>
+                        <p class="book-info">
+                            يناقش تطور سطح الأرض والأحداث الجيولوجية التي شكلتها.
+                        </p>
+                        <p class="book-author">
+                            المؤلف: كلارينس دانر</p>
+                        <div class="book-rate">
+                            <p>(3.3)</p>
+                                <img src="./img/star.png" alt="star-icon">
+                        </div>
+                        <div class="book-price">
+                            <p> <span>$ 29.99</span> $ 26.99 </p>
+                        </div>
+                        <button class="bookcard-button">
+                                <p><a href="#">أضف إلى عربة التسوق</a></p>
+                                <img src="./img/addcart.png" alt="add-cart-icon">
+                        </button>
+                </div>
+             </div>
+             <div class="book-card">
+                <div class="book-image">
+                    <img src="./img/book item2.jpg" alt="item-3">
+                </div>
+                <div class="book-content">
+                    <p class="book-title"><a href="#">علم الصخور(Petrology)</a></p>
+                    <p class="book-info">
+                        يتناول تكوين الصخور وأنواعها وعمليات تكوينها.
+                    </p>
+                    <p class="book-author">
+                        المؤلف: هارفي بلات
+                    </p>
+                    <div class="book-rate">
+                        <p>(4.5)</p>
+                              <img src="./img/star.png" alt="star-icon">
+                    </div>
+                    <div class="book-price">
+                        <p> <span>$ 29.99</span> $ 26.99 </p>
+                    </div>
+                    <button class="bookcard-button">
+                            <p><a href="#">أضف إلى عربة التسوق</a></p>
+                            <img src="./img/addcart.png" alt="add-cart-icon" >
+                    </button>
+                </div>
+             </div>
+        </div>
+        <!-- book arrows -->
+         <div class="book-arrows">
+            <img src="./img/arrowleft.png" class="prev2" alt="left-icon">
+            <img src="./img/arrowright.png" class="next2" alt="right-icon">
+        </div> 
+     </section>
+
+
+   <!-- section  All books -->
+  <section class="allbooks-section">
+        <header>
+            <p class="text-one">عرض جميع الكتب</p>
+            <p class="text-two">المذكرات</p>
+        </header>
+        <!-- book details -->
+        <div class="slider" id="slider3">
+             <div class="book-card">
+                <div class="book-image">
+                    <img src="./img/book item1.jpg" alt="item-one">
+                </div>
+                <div class="book-content">
+                        <p class="book-title"><a href="#">مبادئ علم الجيولوجيا (Principles of Geology)</a></p>
+                        <p class="book-info">يعد من أوائل الكتب في علم الجيولوجيا ويؤسس
+                            لمفاهيم أساسية في هذا العلم.
+                        </p>
+                        <p class="book-author">المؤلف: تشارلز لايل</p>
+                        <div class="book-rate">
+                            <p>4.3</p>
+                          <img src="./img/star.png" alt="star-icon">
+                        </div>
+                        <div class="book-price">
+                            <p> <span>$ 29.99</span> $ 26.99 </p>
+                        </div>
+                        <button class="bookcard-button">
+                                <p><a href="#">أضف إلى عربة التسوق</a></p>
+                                <img src="./img/addcart.png" alt="add-cart-icon">
+                        </button>
+                </div>
+             </div>
+             <div class="book-card">
+                <div class="book-image">
+                <img src="./img/book item2.jpg" alt="item-2">
+                </div>
+                <div class="book-content">
+                        <p class="book-title"><a href="#">جيولوجيا العالم(Geology of the World)</a></p>
+                        <p class="book-info">
+                            يناقش تطور سطح الأرض والأحداث الجيولوجية التي شكلتها.
+                        </p>
+                        <p class="book-author">
+                            المؤلف: كلارينس دانر</p>
+                        <div class="book-rate">
+                            <p>(3.3)</p>
+                                  <img src="./img/star.png" alt="star-icon">
+                        </div>
+                        <div class="book-price">
+                            <p> <span>$ 29.99</span> $ 26.99 </p>
+                        </div>
+                        <button class="bookcard-button">
+                                <p><a href="#">أضف إلى عربة التسوق</a></p>
+                                <img src="./img/addcart.png" alt="add-cart-icon">
+                        </button>
+                </div>
+             </div>
+             <div class="book-card">
+                <div class="book-image">
+                    <img src="./img/book item2.jpg" alt="item-3">
+                </div>
+                <div class="book-content">
+                    <p class="book-title"><a href="#">علم الصخور(Petrology)</a></p>
+                    <p class="book-info">
+                        يتناول تكوين الصخور وأنواعها وعمليات تكوينها.
+                    </p>
+                    <p class="book-author">
+                        المؤلف: هارفي بلات
+                    </p>
+                    <div class="book-rate">
+                        <p>(4.5)</p>
+                            <img src="./img/star.png" alt="star-icon">
+                    </div>
+                    <div class="book-price">
+                        <p> <span>$ 29.99</span> $ 26.99 </p>
+                    </div>
+                    <button class="bookcard-button">
+                            <p><a href="#">أضف إلى عربة التسوق</a></p>
+                            <img src="./img/addcart.png" alt="add-cart-icon">
+                    </button>
+                </div>
+             </div>
+        </div>
+        <!-- book arrows -->
+         <div class="book-arrows">
+            <img src="./img/arrowleft.png" class="prev3" alt="left-icon">
+            <img src="./img/arrowright.png" class="next3" alt="right-icon">
+        </div> 
+    </section>
+
+    <!-- book revision section -->
+     <section class="book-revistion">
+        <div class="book-rev-container">
+             <div class="left">
+            <img src="./img/ground.png" alt="img-one">
+            <img src="./img/geology.png" alt="img-two">
+             <img src="./img/geology.png" alt="img-three">
+              <img src="./img/ground.png" alt="img-four">
+        </div>
+        <div class="right">
+              <p class="header">
+               مراجعات شاملة في مادة الجيولوجيا استعد للنجاح!
+            </p>
+            <p class="text">
+             "هل أنت مستعد لاجتياز امتحانات الجيولوجيا بثقة؟ نقدم لك سلسلة مراجعات شاملة تغطي جميع مواضيع المادة بأسلوب مبسط ومركز. انضم إلينا لتطوير فهمك للجيولوجيا من الأساسيات إلى المواضيع المتقدمة، مع شرح معمق ورسوم توضيحية تساعدك على استيعاب المفاهيم بسرعة. لا تفوت الفرصة – استعد للنجاح معنا!"</p>
+            <button><a href="#">تصفح المراجعات</a></button>
+        </div>
+
+        </div>
+       
+
+     </section>
+
+     <!-- section  All books -->
+       <section class="allbooks-section">
+        <header>
+            <p class="text-one">عرض جميع الكتب</p>
+            <p class="text-two">المراجعات</p>
+        </header>
+        <!-- book details -->
+        <div class="slider" id="slider4">
+             <div class="book-card">
+                <div class="book-image">
+                    <img src="./img/book item1.jpg" alt="item-one">
+                </div>
+                <div class="book-content">
+                        <p class="book-title"><a href="#">مبادئ علم الجيولوجيا (Principles of Geology)</a></p>
+                        <p class="book-info">يعد من أوائل الكتب في علم الجيولوجيا ويؤسس
+                            لمفاهيم أساسية في هذا العلم.
+                        </p>
+                        <p class="book-author">المؤلف: تشارلز لايل</p>
+                        <div class="book-rate">
+                            <p>4.3</p>
+                                  <img src="./img/star.png" alt="star-icon">
+                        </div>
+                        <div class="book-price">
+                            <p> <span>$ 29.99</span> $ 26.99 </p>
+                        </div>
+                        <button class="bookcard-button">
+                                <p><a href="#">أضف إلى عربة التسوق</a></p>
+                                <img src="./img/addcart.png" alt="add-cart-icon">
+                        </button>
+                </div>
+             </div>
+             <div class="book-card">
+                <div class="book-image">
+                <img src="./img/book item2.jpg" alt="item-2">
+                </div>
+                <div class="book-content">
+                        <p class="book-title"><a href="#">جيولوجيا العالم(Geology of the World)</a></p>
+                        <p class="book-info">
+                            يناقش تطور سطح الأرض والأحداث الجيولوجية التي شكلتها.
+                        </p>
+                        <p class="book-author">
+                            المؤلف: كلارينس دانر</p>
+                        <div class="book-rate">
+                            <p>(3.3)</p>
+                                  <img src="./img/star.png" alt="star-icon">
+                        </div>
+                        <div class="book-price">
+                            <p> <span>$ 29.99</span> $ 26.99 </p>
+                        </div>
+                        <button class="bookcard-button">
+                                <p><a href="#">أضف إلى عربة التسوق</a></p>
+                                <img src="./img/addcart.png" alt="add-cart-icon">
+                        </button>
+                </div>
+             </div>
+             <div class="book-card">
+                <div class="book-image">
+                    <img src="./img/book item2.jpg" alt="item-3">
+                </div>
+                <div class="book-content">
+                    <p class="book-title"><a href="#">علم الصخور(Petrology)</a></p>
+                    <p class="book-info">
+                        يتناول تكوين الصخور وأنواعها وعمليات تكوينها.
+                    </p>
+                    <p class="book-author">
+                        المؤلف: هارفي بلات
+                    </p>
+                    <div class="book-rate">
+                        <p>(4.5)</p>
+                            <img src="./img/star.png" alt="star-icon">
+                    </div>
+                    <div class="book-price">
+                        <p> <span>$ 29.99</span> $ 26.99 </p>
+                    </div>
+                    <button class="bookcard-button">
+                            <p><a href="#">أضف إلى عربة التسوق</a></p>
+                            <img src="./img/addcart.png" alt="add-cart-icon">
+                    </button>
+                </div>
+             </div>
+        </div>
+        <!-- book arrows -->
+         <div class="book-arrows">
+            <img src="./img/arrowleft.png" class="prev4" alt="left-icon">
+            <img src="./img/arrowright.png" class="next4" alt="right-icon">
+        </div> 
+    </section>
+
+    <!-- footer section -->
+     <footer>
+        <div class="footer-top">
+                <div class="col">
+                        <p class="header">تواصل معنا</p>
+                        <div>
+                             <img src="./img/line.png" alt="line-image">
+                        </div>
+                        <div class="col-contact">
+                            <p>44 Danwers,  NY City, USA, 70-102</p>
+                            <img src="./img/locationicon.png" alt="location-img">
+                        </div>
+                        <div class="col-contact">
+                            <p>info.example@gmail.com</p>
+                            <img src="./img/mesicon.png" alt="message-img">
+                        </div>
+                        <div class="col-contact">
+                            <p>91+585-656-658</p>
+                            <img src="./img/phoneicon.png" alt="phone-img">
+                        </div>
+
+                 </div>
+                <div class="col">
+                <p class="header">سياسة الموقع</p>
+                  <div>
+                         <img src="./img/line.png" alt="line-image">
+                  </div>
+                <div class="col-contact">
+                    <p><a href="#">الشروط والأحكام</a></p>
+                    <img src="./img/arroleftfooter.png" alt="arrowleft-icon">
+                </div>
+                <div class="col-contact">
+                     <p><a href="#">سياسة الشحن</a></p>
+                    <img src="./img/arroleftfooter.png"  alt="arrowleft-icon">
+                </div>
+                <div class="col-contact">
+                    <p><a href="#">الخصوصية</a></p>
+                    <img src="./img/arroleftfooter.png" alt="arrowleft-icon">
+                </div>
+
+                </div>
+                <div class="col">
+                <p class="header">الموقع</p>
+                  <div>
+                    <img src="./img/line.png" alt="line-image">
+                 </div>
+                <div class="col-contact">
+                    <p><a href="#"> الرئيسية</a></p>
+                    <img src="./img/arroleftfooter.png" alt="arrowleft-icon">
+                </div>
+                <div class="col-contact">
+                      <p><a href="#">جميع الكتب</a></p>
+                     <img src="./img/arroleftfooter.png" alt="arrowleft-icon">
+                </div>
+                <div class="col-contact">
+                     <p><a href="#">منتجات جديدة</a></p>
+                    <img src="./img/arroleftfooter.png" alt="arrowleft-icon">
+                </div>
+                <div class="col-contact">
+                      <p><a href="#">المذكرات</a></p>
+                     <img src="./img/arroleftfooter.png" alt="arrowleft-icon">
+                </div>
+                <div class="col-contact">
+                       <p><a href="#">المراجعات</a></p>
+                        <img src="./img/arroleftfooter.png" alt="arrowleft-icon">
+                </div>
+                </div>
+                <div class="news-section">
+                        <p class="logo">Logo</p>
+                        <p class="description">انضم إلينا واستكشف كنوز الطبيعة من خلال كتبنا المختارة بعناية.</p>
+                        <div class="last-news">
+                            <p>أخر الأخبار</p>
+                            <div class="email-signup" >
+                                <button><a href="#">سجل الان</a></button>
+                                <div>
+                                <input type="text" placeholder="ادخل بريك الالكتروني ">
+                                <img src="./img/mesicon.png" alt="message-icon">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <div class="left">
+                <img src="./img/payedicon.png" alt="pay-icons">
+            </div>
+            <div class="right">
+                <div>
+                    <a href="#"><img src="./img/facebook.png" alt="facebook-icon"></a>
+                </div>
+                 <div>
+                    <a href="#"><img src="./img/twitter (2).png" alt="twitter-icon"></a>
+                </div>
+                   <div>
+                    <a href="#"><img src="./img/youtube.png" alt="youtube-icon"></a>
+                </div>
+                   <div>
+                    <a href="#"><img src="./img/instgram.png" alt="instgram-icon"></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="encript">
+            <p>جميع الحقوق محفوظه @ 2024</p>
+        </div>
+       
+     </footer>
+
+
+
+     <script src="./main/main.js">
+
+     </script>
+      
+    
+</body>
+</html>
